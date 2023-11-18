@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { fontMulish } from "./fonts";
-import "./globals.scss";
+import DefaultLayout from "@/src/widgets/Layouts/DefaultLayout";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <body className={`${fontMulish.variable} font-sans`}>{children}</body>
-    </html>
-  );
+  return <DefaultLayout>{children}</DefaultLayout>;
 }
