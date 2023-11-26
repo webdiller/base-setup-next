@@ -3,7 +3,7 @@ import React, { FC } from "react";
 interface ComponentProps {}
 
 const AuthMainPage: FC<ComponentProps> = () => {
-  return <div>AuthMainPage</div>;
+  return <div className="container">AuthMainPage</div>;
 };
 
 export default AuthMainPage;
