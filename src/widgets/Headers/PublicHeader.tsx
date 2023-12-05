@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FC } from "react";
+import Link from "next/link"
+import { FC } from "react"
 
 interface ComponentProps {}
 
@@ -10,7 +10,7 @@ const PublicHeader: FC<ComponentProps> = () => {
       <Link href="/about">about</Link>
       <Link href="/profile">profile</Link>
     </header>
-  );
-};
+  )
+}
 
-export default PublicHeader;
+export default PublicHeader

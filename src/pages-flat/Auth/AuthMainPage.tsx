@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from "react"
 
 interface ComponentProps {}
 
 const AuthMainPage: FC<ComponentProps> = () => {
-  return <div className="container">AuthMainPage</div>;
-};
+  return <div>AuthMainPage</div>
+}
 
-export default AuthMainPage;
+export default AuthMainPage

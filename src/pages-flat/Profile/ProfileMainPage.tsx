@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React, { FC } from "react"
 
 interface ComponentProps {}
 
 const ProfileMainPage: FC<ComponentProps> = () => {
-  return <div>ProfileMainPage</div>;
-};
+  return <div>ProfileMainPage</div>
+}
 
-export default ProfileMainPage;
+export default ProfileMainPage
