@@ -7,15 +7,36 @@ html {
 }
 
 body {
+  font-size: 1.5rem;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="search"],
+input[type="tel"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+select[multiple],
+textarea {
+  font-size: 1.5rem;
+}
+
+#__next {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: 1.7rem;
-  input,
-  input::placeholder,
-  button,
-  textarea,
-  textarea::placeholder {
-    font-size: inherit;
-  }
+}
+
+footer {
+  margin-top: auto;
 }
