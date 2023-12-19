@@ -11,7 +11,11 @@ const HomePage: FC<ComponentProps> = () => {
     <>
       <div className="container">
         <form action="">
-          <button type="button" onClick={toggle}>button</button>
+          <button
+            type="button"
+            onClick={toggle}>
+            button
+          </button>
           <input
             type="text"
             placeholder="text"
@@ -36,6 +40,19 @@ const HomePage: FC<ComponentProps> = () => {
             id=""
           />
         </form>
+
+        <div>
+          <p className="text-12">Lorem, ipsum.</p>
+          <p className="text-14">Lorem, ipsum.</p>
+          <p className="text-16">Lorem, ipsum.</p>
+          <p className="text-18">Lorem, ipsum.</p>
+          <p className="text-20">Lorem, ipsum.</p>
+          <p className="text-22">Lorem, ipsum.</p>
+          <p className="text-24">Lorem, ipsum.</p>
+          <p className="text-26">Lorem, ipsum.</p>
+          <p className="text-28">Lorem, ipsum.</p>
+          <p className="text-30">Lorem, ipsum.</p>
+        </div>
       </div>
 
       <SharedModal
