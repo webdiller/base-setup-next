@@ -1,4 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Cloning
+With app router
+```bash
+git clone git@github.com:webdiller/base-setup-next.git
+```
+With pages router
+```bash
+git clone --single-branch --branch with-page-router git@github.com:webdiller/base-setup-next.git
+```
 
 ## Getting Started
 
