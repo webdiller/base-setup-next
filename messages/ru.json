@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "Домашняя",
+    "description": "Это домашняя страница."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Переключиться на {locale, select, de {немецкий} en {английский} other {Неизвестный}}"
+  },
+  "PageLayout": {
+    "pageTitle": "next-intl"
+  }
+}
