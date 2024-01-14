@@ -8,6 +8,10 @@ With pages router
 ```bash
 git clone --single-branch --branch with-page-router git@github.com:webdiller/base-setup-next.git
 ```
+With i18n and page router
+```bash
+git clone --single-branch --branch with-next-intl git@github.com:webdiller/base-setup-next.git
+```
 
 ## Getting Started
 
