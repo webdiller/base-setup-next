@@ -3,10 +3,15 @@ import HomePage from "@/src/pages-flat/HomePage"
 import { ReactElement } from "react"
 import DefaultLayout from "@/src/widgets/Layouts/DefaultLayout"
 import { NextSeo } from "next-seo"
+import { GetStaticPropsContext } from "next"
+import { useTranslations } from "next-intl"
 
-interface PageProps {}
+interface PageProps {
+  messages: any
+}
 
-const Page: NextPageWithLayout<PageProps> = () => {
+const Page: NextPageWithLayout<PageProps> = ({ messages }) => {
+  const t = useTranslations('Index');
   return (
     <>
       <NextSeo
@@ -22,6 +27,14 @@ const Page: NextPageWithLayout<PageProps> = () => {
       <HomePage />
     </>
   )
+}
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default
+    }
+  };
 }
 
 Page.getLayout = function getLayout(page: ReactElement) {

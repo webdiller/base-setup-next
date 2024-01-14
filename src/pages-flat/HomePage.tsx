@@ -1,12 +1,13 @@
-import React, { FC, useState } from "react"
+import React, { FC, useState, useTransition } from "react"
 import { SharedModal } from "../shared/ui/SharedModal"
+import { useTranslations } from "next-intl"
 
 interface ComponentProps {}
 
 const HomePage: FC<ComponentProps> = () => {
   const [isActive, setIsActive] = useState(false)
   const toggle = () => setIsActive((prev) => !prev)
-
+  const t = useTranslations("Index")
   return (
     <>
       <div className="container">
@@ -42,16 +43,16 @@ const HomePage: FC<ComponentProps> = () => {
         </form>
 
         <div>
-          <p className="text-12">Lorem, ipsum.</p>
-          <p className="text-14">Lorem, ipsum.</p>
-          <p className="text-16">Lorem, ipsum.</p>
-          <p className="text-18">Lorem, ipsum.</p>
-          <p className="text-20">Lorem, ipsum.</p>
-          <p className="text-22">Lorem, ipsum.</p>
-          <p className="text-24">Lorem, ipsum.</p>
-          <p className="text-26">Lorem, ipsum.</p>
-          <p className="text-28">Lorem, ipsum.</p>
-          <p className="text-30">Lorem, ipsum.</p>
+          <p className="text-12">{t("title")}</p>
+          <p className="text-14">{t("title")}</p>
+          <p className="text-16">{t("title")}</p>
+          <p className="text-18">{t("title")}</p>
+          <p className="text-20">{t("title")}</p>
+          <p className="text-22">{t("title")}</p>
+          <p className="text-24">{t("title")}</p>
+          <p className="text-26">{t("title")}</p>
+          <p className="text-28">{t("title")}</p>
+          <p className="text-30">{t("title")}</p>
         </div>
       </div>
 
